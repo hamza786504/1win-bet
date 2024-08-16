@@ -1,0 +1,42 @@
+@font-face {
+  font-family: sf-display-regular;
+  src: url("../font/SFPRODISPLAYREGULAR.OTF");
+}
+@font-face {
+  font-family: sf-display-medium;
+  src: url("../font/SFPRODISPLAYMEDIUM.OTF");
+}
+@font-face {
+  font-family: sf-display-bold;
+  src: url("../font/SFPRODISPLAYBOLD.OTF");
+}
+@font-face {
+  font-family: sf-display-black-italic;
+  src: url("../font/SFPRODISPLAYBLACKITALIC.OTF");
+}
+@font-face {
+  font-family: sf-display-heavy-italic;
+  src: url("../font/SFPRODISPLAYHEAVYITALIC.OTF");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-position: center center;
+  background-size: cover;
+  user-select: none;
+  outline-color: tomato;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+}

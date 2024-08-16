@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Win Landing Page</title>
+</head>
+
+<style>
+  .max-h-0 {
+    max-height: 0;
+  }
+</style>
+
+<body>
+  <header class="relative header py-2 bg-primary">
+    <div class="container flex items-center justify-between max-w-7xl mx-auto px-2 md:px-5">
+      <a href="/">
+        <img width="148" height="75" src="https://1win1.in/wp-content/uploads/2022/07/header-logo.webp"
+          class="w-[110px]" alt="1Win India" loading="lazy" decoding="async" />
+      </a>
+
+      <ul class="hidden xl:flex flex-1 items-center justify-center flex-wrap list-none mx-24 py-2 -mt-4">
+        <li class="font-semibold mt-4 mr-10">
+          <a href="/app" class="flex items-center text-white text-lg">
+            <img src="./images/icon-app.svg" alt="icon-app" class="w-[20px]" />
+            <span class="ms-1">App</span>
+          </a>
+        </li>
+        <li class="font-semibold mt-4 mr-10">
+          <a href="/app" class="flex items-center text-white text-lg">
+            <img src="./images/icon-user.svg" alt="icon-user" class="w-[20px]" />
+            <span class="ms-1">Registration</span>
+          </a>
+        </li>
+        <li class="font-semibold mt-4 mr-10">
+          <a href="/app" class="flex items-center text-white text-lg">
+            <img src="./images/icon-bonus.svg" alt="icon-bonus" class="w-[20px]" />
+            <span class="ms-1">Promo Code</span>
+          </a>
+        </li>
+        <li class="font-semibold mt-4 mr-10">
+          <a href="/app" class="flex items-center text-white text-lg">
+            <img src="./images/icon-ace.svg" alt="icon-ace" class="w-[20px]" />
+            <span class="ms-1">Bonuses</span>
+          </a>
+        </li>
+        <li class="font-semibold mt-4 mr-10">
+          <a href="/app" class="flex items-center text-white text-lg">
+            <!-- <img src="./images/icon-app.svg" alt="icon-app" class="w-[20px]" /> -->
+            <span class="ms-1">Aviator</span>
+          </a>
+        </li>
+        <li class="font-semibold mt-4 mr-10">
+          <a href="/app" class="flex items-center text-white text-lg">
+            <img src="./images/icon-support.svg" alt="icon-app" class="w-[20px]" />
+            <span class="ms-1">Support</span>
+          </a>
+        </li>
+        <li class="font-semibold mt-4 mr-10">
+          <a href="/app" class="flex items-center text-white text-lg">
+            <img src="./images/icon-card.svg" alt="icon-app" class="w-[20px]" />
+            <span class="ms-1">Payment</span>
+          </a>
+        </li>
+        <li class="font-semibold mt-4 mr-10">
+          <a href="/app" class="flex items-center text-white text-lg">
+            <!-- <img src="./images/icon-app.svg" alt="icon-app" class="w-[20px]" /> -->
+            <span class="ms-1">About Us</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="hidden md:flex items-center space-x-2">
+        <button
+          class="border border-blue-500 bg-blue-500 font-bold p-2 px-5 rounded-md text-white hover:bg-transparent transition-colors duration-300">Download</button>
+        <button
+          class="border border-green-600 bg-green-600 font-bold p-2 px-5 rounded-md text-white hover:bg-transparent transition-colors duration-300">Registration</button>
+        <button id="languageButton"
+          class="border relative border-secondry bg-secondry text-lg p-2 ps-2 pr-4 rounded-xl text-white hover:border-sky-300 transition-colors duration-300 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-4 mr-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+          <span id="currentLanguage" class="mr-2">En</span>
+          <img id="currentFlag" src="./images/en.png" alt="en" class="w-[18px] -mb-1" />
+
+          <div id="dropdownMenu"
+            class="absolute shadow-lg rounded-lg overflow-hidden bg-secondry left-0 right-0 top-[40px] hidden">
+            <a href="/bn"
+              class="flex flex-row items-center hover:bg-sky-500 justify-center p-2 cursor-pointer language-option"
+              data-lang="Bn" data-url="/bn">
+              <span class="mx-3">Bn</span>
+              <img src="./images/bn.png" alt="bn" class="w-[18px] -mb-1" />
+            </a>
+            <a href="/hi"
+              class="flex flex-row items-center hover:bg-sky-500 justify-center p-2 cursor-pointer language-option"
+              data-lang="Hi" data-url="/hi">
+              <span class="mx-3">Hi</span>
+              <img src="./images/hi.png" alt="hi" class="w-[18px] -mb-1" />
+            </a>
+          </div>
+        </button>
+      </div>
+
+
+      <button class="bg-transparent border-none outline-none xl:hidden" id="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24" stroke-width="2"
+          stroke="currentColor" class="size-7 text-white">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+    <div class="container flex md:hidden items-center justify-center max-w-7xl mx-auto px-2 md:px-5">
+      <div class="flex w-full justify-center flex-nowrap items-center space-x-2">
+        <button
+          class="w-full sm:w-auto border border-blue-500 bg-blue-500 font-bold p-2 px-5 rounded-md text-white hover:bg-transparent transition-colors duration-300">Download</button>
+        <button
+          class="w-full sm:w-auto border border-green-600 bg-green-600 font-bold p-2 px-5 rounded-md text-white hover:bg-transparent transition-colors duration-300">Registration</button>
+        <button id="languageButton"
+          class="sm:flex hidden border relative border-secondry bg-secondry text-lg p-2 ps-2 pr-4 rounded-xl text-white hover:border-sky-300 transition-colors duration-300 items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-4 mr-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+          <span id="currentLanguage" class="mr-2">En</span>
+          <img id="currentFlag" src="./images/en.png" alt="en" class="w-[18px] -mb-1" />
+
+          <div id="dropdownMenu"
+            class="absolute shadow-lg rounded-lg overflow-hidden bg-secondry left-0 right-0 top-[40px] hidden">
+            <a href="/bn"
+              class="flex flex-row items-center hover:bg-sky-500 justify-center p-2 cursor-pointer language-option"
+              data-lang="Bn" data-url="/bn">
+              <span class="mx-3">Bn</span>
+              <img src="./images/bn.png" alt="bn" class="w-[18px] -mb-1" />
+            </a>
+            <a href="/hi"
+              class="flex flex-row items-center hover:bg-sky-500 justify-center p-2 cursor-pointer language-option"
+              data-lang="Hi" data-url="/hi">
+              <span class="mx-3">Hi</span>
+              <img src="./images/hi.png" alt="hi" class="w-[18px] -mb-1" />
+            </a>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      class="flex flex-col sidebar transform -translate-x-full shadow-lg fixed top-0 left-0 h-screen w-full bg-primary transition-transform duration-300 ease-in-out">
+
+      <div class="flex-1 flex flex-col items-stretch">
+        <!-- Start - Sidebar Topbar -->
+        <div class="flex justify-between items-center p-2">
+          <a href="/">
+            <img width="148" height="75" src="https://1win1.in/wp-content/uploads/2022/07/header-logo.webp"
+              class="w-[110px]" alt="1Win India" loading="lazy" decoding="async" />
+          </a>
+
+          <button class="bg-transparent border-none outline-none" id="close_sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" class="size-7 text-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <!-- Ending - Sidebar Topbar -->
+
+
+        <ul class="flex h-full overflow-y-scroll w-full flex-col items-stretch justify-start list-none">
+          <li class="font-semibold mb-0 py-2 px-4 mt-0 mr-0 border-t border-sky-800">
+            <a href="/app" class="flex items-center text-white text-lg">
+              <img src="./images/icon-app.svg" alt="icon-app" class="w-[20px]" />
+              <span class="ms-2">App</span>
+            </a>
+          </li>
+          <li class="font-semibold mb-0 py-2 px-4 mt-0 mr-0 border-t border-sky-800">
+            <a href="/app" class="flex items-center text-white text-lg">
+              <img src="./images/icon-user.svg" alt="icon-user" class="w-[20px]" />
+              <span class="ms-2">Registration</span>
+            </a>
+          </li>
+          <li class="font-semibold mb-0 py-2 px-4 mt-0 mr-0 border-t border-sky-800">
+            <a href="/app" class="flex items-center text-white text-lg">
+              <img src="./images/icon-bonus.svg" alt="icon-bonus" class="w-[20px]" />
+              <span class="ms-2">Promo Code</span>
+            </a>
+          </li>
+          <li class="font-semibold mb-0 py-2 px-4 mt-0 mr-0 border-t border-sky-800">
+            <a href="/app" class="flex items-center text-white text-lg">
+              <img src="./images/icon-ace.svg" alt="icon-ace" class="w-[20px]" />
+              <span class="ms-2">Bonuses</span>
+            </a>
+          </li>
+          <li class="font-semibold mb-0 py-2 px-4 mt-0 mr-0 border-t border-sky-800">
+            <a href="/app" class="flex items-center text-white text-lg">
+              <img src="./images/icon-app.svg" alt="icon-app" class="w-[20px]" />
+              <span class="ms-2">Aviator</span>
+            </a>
+          </li>
+          <li class="font-semibold mb-0 py-2 px-4 mt-0 mr-0 border-t border-sky-800">
+            <a href="/app" class="flex items-center text-white text-lg">
+              <img src="./images/icon-support.svg" alt="icon-app" class="w-[20px]" />
+              <span class="ms-2">Support</span>
+            </a>
+          </li>
+          <li class="font-semibold mb-0 py-2 px-4 mt-0 mr-0 border-t border-sky-800">
+            <a href="/app" class="flex items-center text-white text-lg">
+              <img src="./images/icon-card.svg" alt="icon-app" class="w-[20px]" />
+              <span class="ms-2">Payment</span>
+            </a>
+          </li>
+          <li class="font-semibold mb-0 py-2 px-4 mt-0 mr-0 border-t border-sky-800">
+            <a href="/app" class="flex items-center text-white text-lg">
+              <img src="./images/icon-app.svg" alt="icon-app" class="w-[20px]" />
+              <span class="ms-2">About Us</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="container flex md:hidden items-center justify-center max-w-7xl mx-auto p-2 md:px-5">
+        <div class="flex w-full justify-center flex-nowrap items-center space-x-2">
+          <button
+            class="w-full sm:w-auto border border-blue-500 bg-blue-500 font-bold p-2 px-5 rounded-md text-white hover:bg-transparent transition-colors duration-300">Download</button>
+          <button
+            class="w-full sm:w-auto border border-green-600 bg-green-600 font-bold p-2 px-5 rounded-md text-white hover:bg-transparent transition-colors duration-300">Registration</button>
+          <button id="languageButton"
+            class="sm:flex hidden border relative border-secondry bg-secondry text-lg p-2 ps-2 pr-4 rounded-xl text-white hover:border-sky-300 transition-colors duration-300 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-4 mr-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+            <span id="currentLanguage" class="mr-2">En</span>
+            <img id="currentFlag" src="./images/en.png" alt="en" class="w-[18px] -mb-1" />
+
+            <div id="dropdownMenu"
+              class="absolute shadow-lg rounded-lg overflow-hidden bg-secondry left-0 right-0 top-[40px] hidden">
+              <a href="/bn"
+                class="flex flex-row items-center hover:bg-sky-500 justify-center p-2 cursor-pointer language-option"
+                data-lang="Bn" data-url="/bn">
+                <span class="mx-3">Bn</span>
+                <img src="./images/bn.png" alt="bn" class="w-[18px] -mb-1" />
+              </a>
+              <a href="/hi"
+                class="flex flex-row items-center hover:bg-sky-500 justify-center p-2 cursor-pointer language-option"
+                data-lang="Hi" data-url="/hi">
+                <span class="mx-3">Hi</span>
+                <img src="./images/hi.png" alt="hi" class="w-[18px] -mb-1" />
+              </a>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="banner bg-[#090f1e] min-h-[550px]">
+    <div class="flex max-w-7xl flex-col lg:flex-row lg:items-center mx-auto  px-2 md:px-5">
+      <div class="lg:w-7/12 w-full">
+        <h1 class="text-5xl leading-tight text-sky font-bold font-sf-display-black-italic italic">
+          1win – Official Website for Online Sports Betting and Casino Games in India
+        </h1>
+        <p class="text-white text-lg max-w-[650px] w-full lg:w-10/12">
+          1win is an in-demand bookmaker website among Indian players, offering a variety of sports disciplines and
+          lucrative bonuses. Delve into the exciting and promising world of betting and get a +500 on four first deposit
+          bonuses up to 170,000 INR and other generous promotions.
+        </p>
+        <p class="text-xl text-gray-300 mt-3">
+          Copy and use promo code to get bonus
+        </p>
+        <div class="flex py-3 flex-col sm:flex-row items-center justify-start">
+          <a href="/"
+            class="mx-1 min-w-[350px] w-full sm:w-auto flex items-center bg-transparent border-none overflow-hidden">
+            <div
+              class="max-sm:flex-1 max-sm:items-stretch max-sm:h-full outline-none h-full rounded-l-lg border-dashed border-2 border-secondry bg-primary p-6 px-5 mt-0 flex items-center max-sm:py-3 justify-between">
+              <span class="text-white text-xl font-sf-display-bold fw-normal">START2WIN</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="size-6 ms-2 text-sky hover:text-blue-600 transition-colors duration-300">
+                <path fill-rule="evenodd"
+                  d="M17.663 3.118c.225.015.45.032.673.05C19.876 3.298 21 4.604 21 6.109v9.642a3 3 0 0 1-3 3V16.5c0-5.922-4.576-10.775-10.384-11.217.324-1.132 1.3-2.01 2.548-2.114.224-.019.448-.036.673-.051A3 3 0 0 1 13.5 1.5H15a3 3 0 0 1 2.663 1.618ZM12 4.5A1.5 1.5 0 0 1 13.5 3H15a1.5 1.5 0 0 1 1.5 1.5H12Z"
+                  clip-rule="evenodd" />
+                <path
+                  d="M3 8.625c0-1.036.84-1.875 1.875-1.875h.375A3.75 3.75 0 0 1 9 10.5v1.875c0 1.036.84 1.875 1.875 1.875h1.875A3.75 3.75 0 0 1 16.5 18v2.625c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625v-12Z" />
+                <path
+                  d="M10.5 10.5a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963 5.23 5.23 0 0 0-3.434-1.279h-1.875a.375.375 0 0 1-.375-.375V10.5Z" />
+              </svg>
+            </div>
+            <div
+              class="!bg-sky py-0 sm:py-3 lg:p-1 xl:p-2 border-sky border-2 px-5 mt-0 flex items-center justify-between outline-none rounded-r-lg">
+              <span class="text-white text-base lg:p-1 py-0 xl:text-sm font-sf-display-bold fw-normal">
+                GET <span class="font-sf-display-black-italic md:text-md lg:text-md xl:text-2xl">
+                  +500%
+                </span><br />
+                on FIRST DEPOSIT
+              </span>
+            </div>
+          </a>
+          <a href="/"
+            class="mx-1 max-sm:mt-3 max-sm:w-full sm:w-auto flex text-white hover:text-black p-4 min-sm:max-w-[250px] max-w-[230px] sm:-mt-3 font-semibold rounded-lg -mb-3 min-sm:ml-3 border-none outline-none from-green-500 bg-gradient-to-r to-green-600 transition-colors duration-300 flex justify-center text-center py-3">
+            SIGNUP AND GET BONUS RIGHT NOW
+          </a>
+        </div>
+      </div>
+      <div class="lg:w-5/12 w-full">
+        <img src="./images/main-30.webp" class="max-w-[500px] mx-auto" alt="win-india" />
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl flex items-center mx-auto px-2 py-3 md:p-7">
+    <div class="hidden md:flex w-1/3 px-3">
+      <img src="./images/banner-1.png" style="height: 180px; object-fit: cover; object-position: right;"
+        alt="banner1" />
+    </div>
+    <div class="w-full max-w-[400px] mx-auto md:w-1/3 px-3">
+
+
+      <h3 class="text-xl mb-3 text-gray-500 text-center">
+        Use registration promo code to get bonus
+      </h3>
+      <div
+        class="flex items-center justify-between bg-gray-200 border border-dashed border-blue-500 rounded-lg p-4 md:my-4 my-2">
+        <span class="text-xl font-sf-display-black-italic">START2WIN</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+          class="size-6 ms-2 text-dark hover:text-blue-600 transition-colors duration-300">
+          <path fill-rule="evenodd"
+            d="M17.663 3.118c.225.015.45.032.673.05C19.876 3.298 21 4.604 21 6.109v9.642a3 3 0 0 1-3 3V16.5c0-5.922-4.576-10.775-10.384-11.217.324-1.132 1.3-2.01 2.548-2.114.224-.019.448-.036.673-.051A3 3 0 0 1 13.5 1.5H15a3 3 0 0 1 2.663 1.618ZM12 4.5A1.5 1.5 0 0 1 13.5 3H15a1.5 1.5 0 0 1 1.5 1.5H12Z"
+            clip-rule="evenodd" />
+          <path
+            d="M3 8.625c0-1.036.84-1.875 1.875-1.875h.375A3.75 3.75 0 0 1 9 10.5v1.875c0 1.036.84 1.875 1.875 1.875h1.875A3.75 3.75 0 0 1 16.5 18v2.625c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625v-12Z" />
+          <path
+            d="M10.5 10.5a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963 5.23 5.23 0 0 0-3.434-1.279h-1.875a.375.375 0 0 1-.375-.375V10.5Z" />
+        </svg>
+      </div>
+
+      <button type="button"
+        class="w-full hover:text-black from-green-500 p-3 text-white font-bold text-center rounded-lg bg-gradient-to-r to-green-600 transition-colors duration-300">
+        CLAIM BONUS
+      </button>
+    </div>
+    <div class="hidden md:flex w-1/3 px-3">
+      <img src="./images/banner-2.png" style="height: 180px; object-fit: cover; object-position: left;" alt="banner1" />
+    </div>
+  </div>
+
+  <nav class="flex items-center justify-start max-w-6xl mx-auto my-5">
+    <h2 class="text-lg font-semibold">Page navigation</h2>
+    <ul class="hidden flex-1 md:flex items-center flex-wrap space-y-2 px-3">
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Information</a>
+      </li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Welcome
+          Bonus</a></li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Start
+          Betting</a></li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Login</a></li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Sections</a>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Casino</a></li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Cricket</a></li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Popular
+          Sports</a></li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Esports
+          Betting</a></li>
+      </li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Betting
+          Options</a></li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Betting Odds</a>
+      </li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Basic
+          Mistakes</a></li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Casino
+          Online</a></li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Payment
+          Methods</a></li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Advantages</a>
+      </li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Deactivating
+          Account</a></li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">Website
+          Problems</a></li>
+      <li><a href="/"
+          class="px-4 py-2 text-gray-400 hover:text-gray-900 transition-colors duration-300 rounded-md">FAQ</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="max-w-6xl mx-auto my-5 flex flex-col items-center my-5 md:flex-row">
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">1win Official Website: Main
+        Features and Information</h2>
+      <p class="mb-6">
+        <strong>1Win Bet</strong> is a relatively new betting site, formerly called FirstBet or one win, which only
+        underwent a complete rebranding in 2018. Most people in Europe, CIS, and even in Uzbekistan have already
+        discovered <a href="https://1win-uzs.com/" class="text-blue-500 hover:underline">1Win</a>. The detailed design
+        is a real eye-catcher and will not leave anyone indifferent. We could say that our pluses visibly outweigh any
+        negatives, because since its launch date in India, we have already attracted tens of thousands of sports betting
+        players, the most popular payment systems, and our official website is absolutely legal.
+      </p>
+    </div>
+    <div class="mt-3 md:mt-0 px-2 w-full md:w-5/12">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/Official-Websit.webp"
+        alt="Overview and detailed information about 1Win online casino" class="rounded-lg shadow-lg" loading="lazy">
+    </div>
+  </div>
+  <!-- Table -->
+  <table class="max-w-6xl mx-auto bg-blue-50 border border-blue-200 rounded-lg">
+    <tbody>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4 font-semibold w-1/2 text-center">Company</td>
+        <td class="py-2 px-4 w-1/2 text-center">MFI Investments Ltd</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4 font-semibold w-1/2 text-center">Year</td>
+        <td class="py-2 px-4 w-1/2 text-center">2016</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4 font-semibold w-1/2 text-center">Languages</td>
+        <td class="py-2 px-4 w-1/2 text-center">English, Hindi, +17</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4 font-semibold w-1/2 text-center">Available Games</td>
+        <td class="py-2 px-4 w-1/2 text-center">Slots, Table Games, Live Casino, Sports Betting, and others.</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4 font-semibold w-1/2 text-center">Providers</td>
+        <td class="py-2 px-4 w-1/2 text-center">EvolutionGaming, PragmaticPlay, Spribe, Ezugi, Play’nGO, BGAMING,
+          Microgaming, NetEnt,
+          and +120</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4 font-semibold w-1/2 text-center">Welcome Bonus</td>
+        <td class="py-2 px-4 w-1/2 text-center">500% on four first deposits up to 170,000 INR.</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4 font-semibold w-1/2 text-center">Payment Methods</td>
+        <td class="py-2 px-4 w-1/2 text-center">Net Banking, UPI, Paytm, Skrill, Neteller, Cryptocurrency, and so on.
+        </td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4 font-semibold w-1/2 text-center">Customer Support</td>
+        <td class="py-2 px-4 w-1/2 text-center">24/7 Live Chat, Email Support, FAQ</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4 font-semibold w-1/2 text-center">Mobile Compatibility</td>
+        <td class="py-2 px-4 w-1/2 text-center">iOS, Android (Mobile App available)</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4 font-semibold w-1/2 text-center">Licensing</td>
+        <td class="py-2 px-4 w-1/2 text-center">Curacao, № 8048/JAZ 2018-040</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4 font-semibold w-1/2 text-center">Responsible Gaming</td>
+        <td class="py-2 px-4 w-1/2 text-center">Self-Exclusion, Deposit Limits, Responsible Gaming Tools</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4 font-semibold w-1/2 text-center">Security</td>
+        <td class="py-2 px-4 w-1/2 text-center">SSL Encryption, Secure Payment Processing</td>
+      </tr>
+      <tr class="border-b border-gray-200">
+        <td class="py-2 px-4 font-semibold w-1/2 text-center">Social Media</td>
+        <td class="py-2 px-4 w-1/2 text-center">Facebook, Instagram, Twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Section for Welcome Bonus -->
+  <div class="my-5 flex items-center flex-col md:flex-row -mx-2 max-w-6xl mx-auto">
+    <div class="w-full md:w-7/12 px-2">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Join 1win and Get a Welcome Bonus
+      </h2>
+      <p class="text-gray-700 mb-6">1win welcomes new players with a generous welcome bonus pack of 500% in total.
+        Registered users may claim the reward when complying with requirements. The foremost demand is to deposit after
+        registration and get an immediate crediting of funds into their main account and a bonus percent into the bonus
+        account.</p>
+
+      <ul class="list-disc list list-inside mb-6 text-gray-700" style="list-style-type: disc !important;">
+        <li class="list-disc list-inside">Get 200% of the 1st deposit;</li>
+        <li class="list-disc list-inside">Get 150% of the 2nd deposit;</li>
+        <li class="list-disc list-inside">Get 100% of the 3rd deposit;</li>
+        <li class="list-disc list-inside">Get 50% of the 4th deposit.</li>
+      </ul>
+    </div>
+
+    <div class="w-full md:w-5/12 px-2">
+      <img src="https://1win1.in/wp-content/uploads/2024/05/Join-1win-and-Get-a-Welcome-Bonus-.webp"
+        alt="All new registered users receive a special welcome bonus from 1win" class="w-full rounded-lg shadow-md" />
+    </div>
+  </div>
+
+
+  <div class="max-w-6xl mx-auto my-5 flex flex-col items-center my-5 md:flex-row">
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Other Promotional Offers Available
+        to Players</h2>
+      <p class="mb-6">
+        The ‘Promotions and Bonuses’ tab located at the top of the site enlists other 1win incentives. In the ‘Permanent
+        bonuses’ tab players may claim the following rewards:
+      </p>
+      <ul class="list-disc list-inside">
+        <li class="list-disc list-inside"><strong>Express Bonus.</strong> You get a bonus percentage based on your
+          winning amount when you complete an
+          express with five or more events. The ultimate multiplier for your profits will increase with the number of
+          events you add to your betting slip. For instance, the total earnings will be enhanced by 7% if there are 5
+          events on the bet slip, and you will receive a 15% multiplier if there are 11 events or more. One crucial
+          requirement is that every event on your bet slip must be played; otherwise, your wager will be canceled;</li>
+        <li class="list-disc list-inside mt-2"><strong>Cashback on Casino up to 30%</strong> Players get money back into
+          a bonus account in a specific
+          percentage of the loss, which they may spend again. The reward is credited to the main account. The maximum
+          return is 30%, and the payback percentage is determined by how much they lost over the previous week. 1Win
+          Cashback bonuses have no wagering requirements.</li>
+      </ul>
+    </div>
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/Other-Promotional-Offers-Available-to-Players.webp"
+        alt="Overview and detailed information about 1Win online casino" class="rounded-lg shadow-lg" loading="lazy">
+    </div>
+  </div>
+
+
+  <div class="max-w-6xl mx-auto my-5 max-w-6xl px-2">
+    <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Start Betting at 1win in Just 5 Steps
+    </h2>
+    <p>New players with no betting experience may follow the instructions below to place bets at sports at 1win without
+      problems. You need to follow all the steps to cash out your winnings after playing the game without any problems.
+    </p>
+
+
+    <!-- 1 -->
+    <div class="flex my-5 items-center flex-col md:flex-row items-center md:-mx-2">
+      <div class="md:mx-2 w-full md:w-7/12 flex border border-blue-600 rounded-lg overflow-hidden border-dashed ">
+        <div class="flex-shrink-0">
+          <span
+            class="block w-12 h-full bg-gradient-to-b from-blue-500 to-blue-700 text-white text-center font-semibold flex items-center justify-center italic font-sf-display-black-italic">1</span>
+        </div>
+        <div class="flex-1 py-6 p-3">
+          <h3 class="text-lg font-bold mb-2 italic">Create Your Personal Account</h3>
+          <p class="mb-4"><strong>To join 1win, players must register</strong>. Below is a guide for players on how to
+            create a new account.</p>
+          <ol class="mb-4">
+            <li class="list-decimal list-outside ms-4">Visit the website of 1win India betting. Navigate to the official
+              website on your PC or mobile device
+              via a web browser.</li>
+            <li class="list-decimal list-outside ms-4">Locate the ‘Register’ button. Search for the green “Registration”
+              button located in the top right
+              corner.</li>
+            <li class="list-decimal list-outside ms-4">Finish filling out the registration form. Both traditional
+              methods of signing up by phone and email and
+              through social networks are available. Selecting a network (such as Google, Telegram, and others) and
+              money is required if the player chooses the first option. Entering your phone number, password, and email
+              address, and choosing a currency is necessary for the second method.</li>
+            <li class="list-decimal list-outside ms-4">The following terms and conditions should be reviewed and
+              accepted. Examine the rules and regulations of
+              1win. Understanding the rules and regulations of the website is essential. To demonstrate your acceptance
+              of them, tick the box or mark the relevant checkbox.</li>
+            <li class="list-decimal list-outside ms-4">Complete the enrollment procedure. Click “Register” to complete
+              the registration process. If a promo
+              code is available, players may provide it for extra bonuses.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="md:px-2 w-full md:w-5/12 mt-3 md:mt-0 mx-auto">
+        <img src="https://1win1.in/wp-content/uploads/2024/05/Start-Betting-Step-1.webp"
+          alt="Create a 1win personal account" class="w-full h-auto">
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="flex my-5 items-center flex-col md:flex-row items-center md:-mx-2">
+      <div class="md:mx-2 w-full md:w-7/12 flex border border-blue-600 rounded-lg overflow-hidden border-dashed ">
+        <div class="flex-shrink-0">
+          <span
+            class="block w-12 h-full bg-gradient-to-b from-yellow-400 to-orange-400 text-white text-center font-semibold flex items-center justify-center italic font-sf-display-black-italic">2</span>
+        </div>
+        <div class="flex-1 py-6 p-3">
+          <h3 class="text-lg font-bold mb-2 italic">Complete Instant Verification</h3>
+          <p class="mb-4">After signing up, look for a verification link from 1win in your email. Players will be taken
+            to a home page of the website after clicking the verification link, which will say that your account has
+            been activated and your email address has been properly validated. By taking this action, you can help
+            prevent unwanted access and guarantee the security of your account.</p>
+        </div>
+      </div>
+      <div class="md:px-2 w-full md:w-5/12 mt-3 md:mt-0 mx-auto">
+        <img src="https://1win1.in/wp-content/uploads/2024/05/Start-Betting-Step-2.webp" alt=""
+          class="w-full h-auto rounded-lg">
+      </div>
+    </div>
+    <!-- 3-->
+    <div class="flex my-5 items-center flex-col md:flex-row items-center md:-mx-2">
+      <div class="md:mx-2 w-full md:w-7/12 flex border border-blue-600 rounded-lg overflow-hidden border-dashed ">
+        <div class="flex-shrink-0">
+          <span
+            class="block w-12 h-full bg-gradient-to-b to-green-400 from-green-600 text-white text-center font-semibold flex items-center justify-center italic font-sf-display-black-italic">3</span>
+        </div>
+        <div class="flex-1 py-6 p-3">
+          <h3 class="text-lg font-bold mb-2 italic">Make a Deposit to Your Account</h3>
+          <p class="mb-4">Only registered players may top up accounts. After successful registration and verification,
+            enter the account by providing a 1win login and password. Being at the homepage, follow the instructions.
+          </p>
+          <ol class="mb-4">
+            <li class="list-decimal list-outside ms-4">In the top right corner, click the green ‘Deposit’ button.</li>
+            <li class="list-decimal list-outside ms-4">Select the preferred payment option from the form’s list.</li>
+            <li class="list-decimal list-outside ms-4">Input the amount to be deposited. Once a payment option has been
+              chosen, the minimum and maximum amount will be shown.</li>
+            <li class="list-decimal list-outside ms-4">Once you have reviewed the information provided, click ‘Deposit.’
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="md:px-2 w-full md:w-5/12 mt-3 md:mt-0 mx-auto">
+        <img src="https://1win1.in/wp-content/uploads/2024/05/Start-Betting-Step-3.webp" alt=""
+          class="w-full h-auto rounded-lg">
+      </div>
+    </div>
+    <!-- 4-->
+    <div class="flex my-5 items-center flex-col md:flex-row items-center md:-mx-2">
+      <div class="md:mx-2 w-full md:w-7/12 flex border border-blue-600 rounded-lg overflow-hidden border-dashed ">
+        <div class="flex-shrink-0">
+          <span
+            class="block w-12 h-full bg-gradient-to-b to-blue-500 from-blue-600 text-white text-center font-semibold flex items-center justify-center italic font-sf-display-black-italic">4</span>
+        </div>
+        <div class="flex-1 py-6 p-3">
+          <h3 class="text-lg font-bold mb-2 italic">Select an Event and Place a Bet</h3>
+          <p class="mb-4">After funding the account and logging in, 1win India players should make their event choice.
+            In addition to live matches that are already in action, they may wager on future matches or events that are
+            planned. You should:
+          </p>
+          <ol class="mb-4">
+            <li class="list-decimal list-outside ms-4">Select the “Pre-match Betting” or “Live Betting” tab.</li>
+            <li class="list-decimal list-outside ms-4">Decide on the sport.</li>
+            <li class="list-decimal list-outside ms-4">Check out the list of games and events you can bet on. For more
+              detailed information, including the odds and betting markets available, click on a particular match.</li>
+            <li class="list-decimal list-outside ms-4">Click on the odds to add your selection to the bet slip. You can
+              add extra selections to your bet slip if you would like to wager on more than one event or match.
+            </li>
+            <li class="list-decimal list-outside ms-4">Determine the amount of money you want to wager on each
+              selection, then record it on the bet slip. The bet sheet will automatically determine your potential
+              winnings based on the stake and odds that you enter.
+            </li>
+            <li class="list-decimal list-outside ms-4">When you’re ready, you may finish placing your bets by clicking
+              the ‘Place Bet’ button.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="md:px-2 w-full md:w-5/12 mt-3 md:mt-0 mx-auto">
+        <img src="https://1win1.in/wp-content/uploads/2024/05/Start-Betting-Step-4.webp" alt=""
+          class="w-full h-auto rounded-lg">
+      </div>
+    </div>
+    <!-- 5-->
+    <div class="flex my-5 items-center flex-col md:flex-row items-center md:-mx-2">
+      <div class="md:mx-2 w-full md:w-7/12 flex border border-blue-600 rounded-lg overflow-hidden border-dashed ">
+        <div class="flex-shrink-0">
+          <span
+            class="block w-12 h-full bg-gradient-to-b to-blue-300 from-blue-400 text-white text-center font-semibold flex items-center justify-center italic font-sf-display-black-italic">5</span>
+        </div>
+        <div class="flex-1 py-6 p-3">
+          <h3 class="text-lg font-bold mb-2 italic">Withdraw Your Winnings</h3>
+          <p class="mb-4">After reaching a specific amount in their account, 1win players from India can take out money.
+            You must complete the following steps and be a registered and confirmed user of the website to accomplish
+            this.
+          </p>
+          <ol class="mb-4">
+            <li class="list-decimal list-outside ms-4">Enter into your legitimate account.</li>
+            <li class="list-decimal list-outside ms-4">Toggle between the three dots and your profile picture.</li>
+            <li class="list-decimal list-outside ms-4">Choose the ‘Withdrawal’ menu item.</li>
+            <li class="list-decimal list-outside ms-4">Select the payment choice from the list of options.
+            </li>
+            <li class="list-decimal list-outside ms-4">Input the amount needed to cash out.
+            </li>
+            <li class="list-decimal list-outside ms-4">Verify the withdrawal of 1win.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="md:px-2 w-full md:w-5/12 mt-3 md:mt-0 mx-auto">
+        <img src="https://1win1.in/wp-content/uploads/2024/05/Start-Betting-Step-5.webp" alt=""
+          class="w-full h-auto rounded-lg">
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <section class="max-w-6xl mx-auto my-5 flex flex-col items-center md:flex-row">
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        1win Login to Your Player Account
+      </h2>
+      <p class="mb-6">
+        Access to your 1win betting account is automatic upon registration. You will eventually have to go through
+        permission to log in. There are several phases in this straightforward process:
+      </p>
+      <ol class="list-decimal list-inside mb-6">
+        <li class="list-decimal list-outside ms-5">Visit the official 1win website or open the mobile app.</li>
+        <li class="list-decimal list-outside ms-5">Select the ‘Login’ button situated in the upper part.</li>
+        <li class="list-decimal list-outside ms-5">Provide your phone number or email address.</li>
+        <li class="list-decimal list-outside ms-5">Put the password for your account in here. You may reset your
+          password and create a new one right here on this page if you can’t remember your old one.</li>
+        <li class="list-decimal list-outside ms-5">To provide permission, click the ‘Login’ button. Following that, the
+          webpage will be immediately accessed by you.</li>
+      </ol>
+    </div>
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/1win-Login-to-Your-Player-Account.webp"
+        alt="Step-by-step process of entering the 1win casino personal account" class="rounded-lg shadow-lg"
+        loading="lazy">
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto my-5">
+    <div class="flex flex-col items-center md:flex-row">
+      <div class="px-2 w-full md:w-7/12">
+        <h3 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+          Problems Logging in to Your Personal Account?
+        </h3>
+        <p class="mb-6">
+          In case there are any problems entering the account or the player has forgotten a password, they may still
+          sign in. When clicking the ‘Login’ green button, find the ‘Forgot password?’ sign under the password box.
+          Players will be redirected to the password recovery window where they should provide the email or phone
+          indicated while 1win registration. After receiving a link or message, invent a new password and restore it
+          when logging in next time.
+        </p>
+      </div>
+      <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+        <img decoding="async" width="100%" height="auto"
+          src="https://1win1.in/wp-content/uploads/2024/05/Problems-Logging-in-to-Your-Personal-Account.webp"
+          alt="Overview of some problems that may arise when entering the 1win personal account"
+          class="rounded-lg shadow-lg" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="max-w-6xl mx-auto my-5 flex flex-col items-center md:flex-row">
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        Sections That Are Available on the 1win Website
+      </h2>
+      <p class="mb-6">
+        On the homepage of 1win, players may find a variety of tabs that categorize games and events according to their
+        features and types. After clicking the required tab, players are redirected to the list of games or sports that
+        are sorted out according to different categories. Select the preferred category from the following:
+      </p>
+      <ul class="list-disc list-inside mb-6">
+        <li class="list-disc list-outside ms-5">Casino;</li>
+        <li class="list-disc list-outside ms-5">Sport;</li>
+        <li class="list-disc list-outside ms-5">Live-games;</li>
+        <li class="list-disc list-outside ms-5">Quick games;</li>
+        <li class="list-disc list-outside ms-5">Trading;</li>
+        <li class="list-disc list-outside ms-5">Poker;</li>
+        <li class="list-disc list-outside ms-5">Vsport;</li>
+        <li class="list-disc list-outside ms-5">Cybersport.</li>
+      </ul>
+    </div>
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/Sections-That-Are-Available-on-the-1win-Website.webp"
+        alt="On the main page of the 1win website, players can find many tabs" class="rounded-lg shadow-lg"
+        loading="lazy">
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto my-5 flex flex-col items-center md:flex-row">
+    <!-- Content Section -->
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        Cricket – The Most Popular Sport Among Indian Players to Bet on at 1win
+      </h2>
+      <p class="mb-6">
+        Cricket is undeniably the most popular sport for 1win bettors in India. To help bettors make wise choices, 1win
+        also offers the most recent data, live match updates, and professional analysis. Cricket betting provides
+        countless options for excitement and rewards, whether it’s picking the winner of a high-stakes event or guessing
+        the match’s top scorer.
+      </p>
+    </div>
+    <!-- Image Section -->
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/Cricket-The-Most-Popular-Sport-Among-Indian-Players-to-Bet-on-at-1win.webp"
+        alt="Cricket is undoubtedly the most popular sport among 1win players in India" class="rounded-lg shadow-lg"
+        loading="lazy">
+    </div>
+  </section>
+
+  <section class="my-5">
+    <div class="max-w-6xl mx-auto flex flex-col items-center md:flex-row">
+      <!-- Content Section -->
+      <div class="px-2 w-full md:w-7/12">
+        <h3 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+          Betting on IPL and Other Cricket Competitions
+        </h3>
+        <p class="mb-6">
+          The 1win betting site provides you with a range of possibilities if you’re interested in cricket. You may bet
+          on the side you believe will win the game as a standard match wager, or you can wager more precisely on which
+          batter will score the most runs throughout the match.
+        </p>
+        <p class="mb-6">
+          In addition, the bookmaker provides various cricket betting alternatives including total runs scored in the
+          match, runs scored in a particular over, and wickets that will fall within a given time frame. Here is the
+          list of available cricket competitions on 1win:
+        </p>
+        <ul class="list-disc list-inside mb-6">
+          <li class="list-disc list-inside">Indian Premier League;</li>
+          <li class="list-disc list-inside">ICC T20 World Cup;</li>
+          <li class="list-disc list-inside">India. NSK Trophy State T20;</li>
+          <li class="list-disc list-inside">Twenty20 Series;</li>
+          <li class="list-disc list-inside">Women’s Twenty20 Series;</li>
+          <li class="list-disc list-inside">Cool and Smooth T10.</li>
+        </ul>
+      </div>
+      <!-- Image Section -->
+      <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+        <img decoding="async" width="100%" height="auto"
+          src="https://1win1.in/wp-content/uploads/2024/05/Betting-on-IPL-and-Other-Cricket-Competitions.webp"
+          alt="If you are interested in cricket, the 1win betting site provides you with a wide range of options"
+          class="rounded-lg shadow-lg" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="max-w-6xl mx-auto my-5 flex flex-col items-center md:flex-row">
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        Other Popular Sports for Betting at 1win
+      </h2>
+      <p class="mb-6">
+        <strong>1win India betting options are not limited to cricket</strong>. Bettors may follow and place their bets
+        on numerous other sports events that are available in the sports betting tab of the site. Here are those in
+        demand.
+      </p>
+    </div>
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/Other-Popular-Sports-for-Betting-at-1win.webp"
+        alt="1win in India provides access to a large number of sports events for online betting"
+        class="rounded-lg shadow-lg" loading="lazy">
+    </div>
+  </div>
+
+  <section class="wrapper">
+    <div class="max-w-6xl mx-auto my-5 flex flex-col items-center md:flex-row">
+      <div class="px-2 w-full md:w-7/12">
+        <h3 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Football</h3>
+        <p class="mb-6">
+          Football, or soccer as it is known in certain places, is a popular sport across the world. Various outcomes,
+          such as both sides scoring, the result at halftime, and player performance indicators, are available for
+          wagering.
+        </p>
+        <ul class="list-disc list-inside mb-6">
+          <li class="list-disc list-inside">India. Delhi Premier League</li>
+          <li class="list-disc list-inside">Women. India. National League</li>
+          <li class="list-disc list-inside">India. Bhausaheb Bandodkar Memorial Trophy</li>
+          <li class="list-disc list-inside">EURO 2024</li>
+          <li class="list-disc list-inside">UEFA Champions League</li>
+          <li class="list-disc list-inside">Europa League, and others</li>
+        </ul>
+      </div>
+      <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+        <img decoding="async" width="100%" height="auto" src="https://1win1.in/wp-content/uploads/2024/05/Football.webp"
+          alt="Football is a popular sport all over the world" class="rounded-lg shadow-lg" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="wrapper">
+    <div class="max-w-6xl mx-auto my-5 flex flex-col items-center md:flex-row">
+      <div class="px-2 w-full md:w-7/12">
+        <h3 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Tennis</h3>
+        <p class="mb-6">
+          Tennis wagering at the betting tab 1win covers different events. Bets on match winners, exact scores, total
+          sets, and handicaps are available to fans. With the option to gamble on point-by-point results, in-play
+          betting turns every serve and volley into an exciting chance to win.
+        </p>
+        <ul class="list-disc list-inside mb-6">
+          <li class="list-disc list-inside">Australian Open</li>
+          <li class="list-disc list-inside">Women. Australian Open</li>
+          <li class="list-disc list-inside">Wimbledon</li>
+          <li class="list-disc list-inside">Roland Garros, and others</li>
+        </ul>
+      </div>
+      <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+        <img decoding="async" width="100%" height="auto" src="https://1win1.in/wp-content/uploads/2024/05/Tennis.webp"
+          alt="1win covers various tennis events that Indian players can bet on" class="rounded-lg shadow-lg"
+          loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="wrapper">
+    <div class="max-w-6xl mx-auto my-5 flex flex-col items-center md:flex-row">
+      <div class="px-2 w-full md:w-7/12">
+        <h3 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Basketball</h3>
+        <p class="mb-6">
+          Basketball is welcomed by 1win India, which allows bettors to wager on team results, point totals, and player
+          performances. This regional favorite adds a distinct taste to the sports betting options.
+        </p>
+        <ul class="list-disc list-inside mb-6">
+          <li class="list-disc list-inside">NBA</li>
+          <li class="list-disc list-inside">ABA League</li>
+          <li class="list-disc list-inside">Euroleague, and others</li>
+        </ul>
+      </div>
+      <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+        <img decoding="async" width="100%" height="auto"
+          src="https://1win1.in/wp-content/uploads/2024/05/Basketball.webp"
+          alt="Basketball is welcomed by 1win in India, where players can place bets" class="rounded-lg shadow-lg"
+          loading="lazy">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="max-w-6xl mx-auto my-5 flex flex-col items-center md:flex-row">
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Esports Betting – More than 10
+        Disciplines are Available on 1win</h2>
+      <p class="mb-6">
+        eSports is a more recent option in India that is quickly gaining popularity. Events from well-known computer
+        games are available at the bookmaker. With almost ten tournaments every day, the eSports category meets the
+        needs of modern gamblers. Notable tournaments that are accessible for wagering on 1win are the International,
+        Destiny League, and European Pro League. Among the preferable disciplines are the following:
+      </p>
+      <ul class="list-disc list-inside mb-6">
+        <li class="list-disc list-inside">League of Legends;</li>
+        <li class="list-disc list-inside">Dota 2;</li>
+        <li class="list-disc list-inside">Counter-Strike 2;</li>
+        <li class="list-disc list-inside">Call of Duty;</li>
+        <li class="list-disc list-inside">FIFA.Volta;</li>
+        <li class="list-disc list-inside">Honor of Kings;</li>
+        <li class="list-disc list-inside">Starcraft 2;</li>
+        <li class="list-disc list-inside">Rocket League;</li>
+        <li class="list-disc list-inside">VALORANT, and others.</li>
+      </ul>
+    </div>
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/Esports-Betting-More-than-10-Disciplines-are-Available-on-1win.webp"
+        alt="The 1win bookmaker offers events from famous computer games" class="rounded-lg shadow-lg" loading="lazy">
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="max-w-6xl mx-auto my-5 flex flex-col items-center md:flex-row">
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        Possible Betting Options for Indian Players
+      </h2>
+      <p class="mb-6">
+        The bookmaker at 1win provides a wide range of betting options to satisfy gamblers from India, particularly for
+        well-known events. The most popular types and their characteristics are shown below.
+      </p>
+    </div>
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/Possible-Betting-Options-for-Indian-Players.webp" alt=""
+        class="rounded-lg shadow-lg">
+    </div>
+  </section>
+  <section class="max-w-6xl mx-auto my-5 flex flex-col items-center md:flex-row">
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        Match Outcome
+      </h2>
+      <p class="mb-6">
+        This kind of bet is simple and focuses on picking which side will win against the other or, if appropriate, if
+        there will be a draw. It is accessible in all athletic disciplines, including team and individual sports.
+      </p>
+    </div>
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/Match-Outcome.webp" alt="" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+  <section class="max-w-6xl mx-auto my-5 flex flex-col items-center md:flex-row">
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        Total
+      </h2>
+      <p class="mb-6">
+        Total bets, sometimes referred to as Over/Under bets, are wagers on the presence or absence of particular
+        performance metrics in the results of matches. For example, there are bets on the total number of football goals
+        scored or the total number of rounds in a boxing match.
+      </p>
+    </div>
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto" src="https://1win1.in/wp-content/uploads/2024/05/Total.webp"
+        alt="" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+  <section class="max-w-6xl mx-auto my-5 flex flex-col items-center md:flex-row">
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        Handicap
+      </h2>
+      <p class="mb-6">
+        With handicap betting, one team is given a virtual advantage or disadvantage before the game, creating an even
+        playing field. This kind of bet involves guessing how much one side will do better than the other at the end of
+        the game. It can be either positive or negative.
+      </p>
+    </div>
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto" src="https://1win1.in/wp-content/uploads/2024/05/Handicap.webp"
+        alt="" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+  <section class="max-w-6xl mx-auto my-5 flex flex-col items-center md:flex-row">
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        Double Chance
+      </h2>
+      <p class="mb-6">
+        By using Double Chance, bettors can place bets on two probable outcomes of a match at the same time, lowering
+        their chance of losing. But because there is a higher chance of winning with Double Chance bets than with Match
+        Outcome bets, the odds are usually lower.
+      </p>
+    </div>
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/Double-Chance.webp" alt="" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+  <div class="max-w-6xl mx-auto my-5 flex items-center flex-col md:flex-row">
+    <!-- Content Section -->
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        Sports Betting Odds on 1win: Choose Your Winning Options Consciously
+      </h2>
+      <p class="mb-6">
+        Some of the best odds available are provided by 1win. In comparison to other bookmakers, this implies that
+        players’ potential wins will be much larger. The figures known as odds establish the possible reward if a wager
+        is successful. Making a thoughtful approach is essential when it comes to sports 1win betting odds:
+      </p>
+      <ul class="list-disc list-inside mb-6 space-y-3">
+        <li class="list-disc list-outside ms-5">
+          Learn about the odds and how they are calculated. A sports event’s odds indicate the probability that a
+          specific result will occur. Less likelihood of that occurrence is suggested by lower odds, whereas more
+          likelihood is usually indicated by larger odds;
+        </li>
+        <li class="list-disc list-outside ms-5">
+          As you place your bets, take the risk-to-reward ratio into account. While higher odds might result in larger
+          possible winnings, they also frequently carry higher hazards. Conversely, lower odds come with smaller payoff
+          potential but are typically linked to better success rates;
+        </li>
+        <li class="list-disc list-outside ms-5">
+          Take into account variables like team performance, player injuries, head-to-head records, and other pertinent
+          data. By using this knowledge, you may improve your decision-making and raise your chances of success with
+          1Win;
+        </li>
+        <li class="list-disc list-outside ms-5">
+          Use all of the resources and betting tools that 1win has to offer. Live statistics, professional analysis, and
+          betting advice are a few examples of these that may offer insightful information and assist you in placing
+          more well-informed bets.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Image Section -->
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/Sports-Betting-Odds-on-1win-Choose-Your-Winning-Options-Consciously.webp"
+        alt="1win offers some of the best odds" class="rounded-lg shadow-lg" loading="lazy">
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto my-5 flex items-center flex-col md:flex-row">
+    <!-- Content Section -->
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        Mistakes that Players can Make when Choosing a Bet
+      </h2>
+      <p class="mb-6">
+        1Win players in India frequently make a few basic mistakes when selecting a wager, which might decrease their
+        chances of winning. Here are a few of these errors to stay away from:
+      </p>
+      <ul class="list-disc list-inside mb-6 space-y-3">
+        <li class="list-disc list-outside ms-5">Recklessly placing bets without doing any study or analysis;</li>
+        <li class="list-disc list-outside ms-5">Failing to do an adequate study on players, teams, and other pertinent
+          aspects before making a wager;</li>
+        <li class="list-disc list-outside ms-5">Undervaluing the significance of evaluating and comprehending the odds
+          of betting;</li>
+        <li class="list-disc list-outside ms-5">Trying to recoup past losses by chasing losses with bigger or riskier
+          wagers;</li>
+        <li class="list-disc list-outside ms-5">Biased support for one’s home team or other favorites without taking
+          into account other variables that might affect the outcome;</li>
+        <li class="list-disc list-outside ms-5">Blindly adopting other people’s betting strategies or trends without
+          doing your own research;</li>
+        <li class="list-disc list-outside ms-5">Not taking advantage of bookmakers’ incentives and promotions to get the
+          best deal and improve the betting experience.</li>
+      </ul>
+    </div>
+
+    <!-- Image Section -->
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/Mistakes-that-Players-can-Make-when-Choosing-a-Bet.webp"
+        alt="1Win players in India often make several basic mistakes when choosing a bet" class="rounded-lg shadow-lg"
+        loading="lazy">
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto my-5 flex flex-col md:flex-row">
+    <!-- Content Section -->
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        1win Casino Online – Gambling Games
+      </h2>
+      <p class="mb-6">
+        <strong>With over 12,000 games</strong>, 1win casino boasts an outstanding gaming variety. Because of this wide
+        range and the excellent standards that the site maintains, even the pickiest gamers should have no trouble
+        finding games that thrill and satisfy them.
+      </p>
+      <p class="mb-6">
+        It is much easier for 1Win online bettors to select games by provider, popularity, novelty, interest or other
+        factors, as all games in the 1win collection are conveniently categorised.
+      </p>
+    </div>
+
+    <!-- Image Section -->
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/1win-Casino-Online-–-Gambling-Games.webp"
+        alt="With more than 12,000 games, 1win casino boasts an outstanding gaming variety" class="rounded-lg shadow-lg"
+        loading="lazy">
+    </div>
+  </div>
+
+
+  <div class="w-full max-w-6xl mx-auto">
+    <table class="w-full bg-white border border-gray-200">
+      <thead class="bg-black text-white">
+        <tr>
+          <th class="w-1/3 px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">
+            <strong>Casino Categories</strong>
+          </th>
+          <th class="w-1/3 px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">
+            <strong>Description</strong>
+          </th>
+          <th class="w-1/3 px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">
+            <strong>Popular Games</strong>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="bg-blue-50 divide-y divide-gray-200">
+        <tr>
+          <td class="w-1/3 px-6 py-4 text-center">Slots</td>
+          <td class="w-1/3 px-6 py-4 text-center">Cover the most diverse types of games, which have reels, paylines,
+            distinctive symbols, and a variety of bonuses</td>
+          <td class="w-1/3 px-6 py-4 text-center">Wild Bandito, Egypt Fire, Wild Tiger, Blue Star, Titem de Oro, and
+            others</td>
+        </tr>
+        <tr>
+          <td class="w-1/3 px-6 py-4 text-center">Quick Games</td>
+          <td class="w-1/3 px-6 py-4 text-center">Lack typical reels and paylines, and their rounds can span anywhere
+            from a few seconds to many minutes</td>
+          <td class="w-1/3 px-6 py-4 text-center">Aviator, Cricket Crash, Mines, Lucky Clover, F777 Fighter, and others
+          </td>
+        </tr>
+        <tr>
+          <td class="w-1/3 px-6 py-4 text-center">Table Games</td>
+          <td class="w-1/3 px-6 py-4 text-center">Offer a variety of traditional table games. Since the computer handles
+            the dealing and rounds are based on a random number generator</td>
+          <td class="w-1/3 px-6 py-4 text-center">Cocktail Roulette, Speed Auto Roulette, Blackjack, Sic Bo, Dragon
+            Tiger, and others</td>
+        </tr>
+        <tr>
+          <td class="w-1/3 px-6 py-4 text-center">Live Casino</td>
+          <td class="w-1/3 px-6 py-4 text-center">Over 500 games are presented in this tab. Players can enjoy the live
+            dealer company and feel the casino atmosphere</td>
+          <td class="w-1/3 px-6 py-4 text-center">Crazy Time, Hindi Roulette, Andar Bahar, Super 8 Baccarat, and others
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+  <div class="max-w-6xl mx-auto my-5 flex items-center flex-col md:flex-row">
+    <!-- Content Section -->
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        Unique Games Only on 1win
+      </h2>
+      <p class="mb-6">
+        Being a software developer, 1win provides players with a unique chance to try the games that are available
+        only at this casino. Below is a list of 1Win casino’s own games:
+      </p>
+      <ul>
+        <li class="list-disc list-inside">Lucky Jet;</li>
+        <li class="list-disc list-inside">Rocket Queen</li>
+        <li class="list-disc list-inside">Speed-n-Cash;</li>
+        <li class="list-disc list-inside">Coin Flip;</li>
+        <li class="list-disc list-inside">Mines;</li>
+        <li class="list-disc list-inside">Rocket X;</li>
+        <li class="list-disc list-inside">Tower;</li>
+        <li class="list-disc list-inside">Double;</li>
+        <li class="list-disc list-inside">Bonmbucks;</li>
+        <li class="list-disc list-inside">Royal Mines;</li>
+        <li class="list-disc list-inside">Lucky Loot;</li>
+        <li class="list-disc list-inside">Brawl Pirates;</li>
+        <li class="list-disc list-inside">Anubis Plinko.</li>
+      </ul>
+    </div>
+
+    <!-- Image Section -->
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/Unique-Games-Only-on-1win.webp"
+        alt="With more than 12,000 games, 1win casino boasts an outstanding gaming variety" class="rounded-lg shadow-lg"
+        loading="lazy">
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto my-5 flex items-center flex-col md:flex-row">
+    <!-- Content Section -->
+    <div class="px-2 w-full md:w-7/12">
+      <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">
+        1win Payment Methods: Limits, Terms and Fees
+      </h2>
+      <p class="mb-6">
+        Players from India can easily fund their betting accounts and <strong>1win will not charge additional
+          transaction fees</strong>. In the table below you will find the available payment methods:
+      </p>
+    </div>
+
+    <!-- Image Section -->
+    <div class="px-2 w-full md:w-5/12 mt-3 md:mt-0">
+      <img decoding="async" width="100%" height="auto"
+        src="https://1win1.in/wp-content/uploads/2024/05/1win-Payment-Methods-Limits-Terms-and-Fees.webp" alt="" />
+    </div>
+  </div>
+
+
+
+
+
+  <table class="min-w-full bg-white border border-gray-200">
+    <thead class="bg-gray-800 text-white">
+      <tr>
+        <th class="py-3 px-6 text-center border-b border-gray-300 text-left"><strong>Payment System Name</strong></th>
+        <th class="py-3 px-6 text-center border-b border-gray-300 text-left"><strong>Minimum deposit amount,
+            INR</strong></th>
+        <th class="py-3 px-6 text-center border-b border-gray-300 text-left"><strong>Fees</strong></th>
+        <th class="py-3 px-6 text-center border-b border-gray-300 text-left"><strong>Transaction processing
+            time</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="hover:bg-gray-100">
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">UPI</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">300</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">0%</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Instant</td>
+      </tr>
+      <tr class="hover:bg-gray-100">
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">PhonePe</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">300</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">0%</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Instant</td>
+      </tr>
+      <tr class="hover:bg-gray-100">
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">PayTm</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">300</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">0%</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Instant</td>
+      </tr>
+      <tr class="hover:bg-gray-100">
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">GPay</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">300</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">0%</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Instant</td>
+      </tr>
+      <tr class="hover:bg-gray-100">
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Bank Transfer</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">1,000</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">0%</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Instant</td>
+      </tr>
+      <tr class="hover:bg-gray-100">
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">AstroPay</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">390</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">0%</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Instant</td>
+      </tr>
+      <tr class="hover:bg-gray-100">
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Mobikwik</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">300</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">0%</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Instant</td>
+      </tr>
+      <tr class="hover:bg-gray-100">
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">PayZapp</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">300</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">0%</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Instant</td>
+      </tr>
+      <tr class="hover:bg-gray-100">
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Amazon Pay</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">300</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">0%</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Instant</td>
+      </tr>
+      <tr class="hover:bg-gray-100">
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">FreeCharge</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">300</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">0%</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Instant</td>
+      </tr>
+      <tr class="hover:bg-gray-100">
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Airtel</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">300</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">0%</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Instant</td>
+      </tr>
+      <tr class="hover:bg-gray-100">
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">Bitcoin</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">0.00016312 BTC</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">0%</td>
+        <td class="py-3 px-6 border-b text-center bg-blue-50 order-gray-300">15 min</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div class="max-w-6xl mx-auto my-8 px-4">
+    <!-- Introduction Section -->
+    <div class="flex flex-col md:flex-row items-center mb-8">
+      <!-- Text Content -->
+      <div class="w-full md:w-7/12 mb-6 md:mb-0">
+        <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Why Should Players from India
+          Choose 1win?</h2>
+        <p class="mb-4">1win is known as a reliable bookmaker. By choosing this site, users can be sure that all their
+          personal data will be protected and all winnings will be paid out instantly.</p>
+        <p>Below are 5 advantages of 1Win over other bookmakers.</p>
+      </div>
+      <!-- Image Content -->
+      <div class="w-full md:w-5/12">
+        <img decoding="async" width="100%" height="auto"
+          src="https://1win1.in/wp-content/uploads/2024/05/Why-Should-Players-from-India-Choose-1win.webp"
+          alt="Overview of the main advantages of 1Win over other bookmakers" class="rounded-lg shadow-lg"
+          loading="lazy">
+      </div>
+    </div>
+
+    <!-- Official License Section -->
+    <section class="my-8">
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- Text Content -->
+        <div class="w-full md:w-7/12 mb-6 md:mb-0">
+          <h3 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Official Licence</h3>
+          <p class="mb-4">The operating license for 1win is valid. This website is run by Curacao eGaming and is
+            licensed under number <strong>8048/JAZ 2018-040</strong>. It suggests that 1win complies with global norms
+            for betting, such as safe and secure transactions, player protection, and fair play.</p>
+          <p>Legality-wise, 1win is acceptable in India. Online gambling is legal in the nation for persons who are at
+            least 18 years old. Players don’t have to worry about breaking the law to trust the casino and make bets.
+          </p>
+        </div>
+        <!-- Image Content -->
+        <div class="w-full md:w-5/12">
+          <img decoding="async" width="100%" height="auto"
+            src="https://1win1.in/wp-content/uploads/2024/05/Official-Licence.webp"
+            alt="In terms of legality, 1win is acceptable in India and has all the licenses"
+            class="rounded-lg shadow-lg" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile App Section -->
+    <section class="my-8">
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- Text Content -->
+        <div class="w-full md:w-7/12 mb-6 md:mb-0">
+          <h3 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Mobile app for Android and iOS
+            Devices</h3>
+          <p class="mb-4">With the 1win app for iOS and Android, it’s easy to bet in India on your favorite sports
+            events, including the IPL. Apart from a slightly different user interface and the ability to use 1win from
+            anywhere, the app functions like the desktop version or the mobile website.</p>
+          <p>Sometimes, the bookmaker offers exclusive promotions to users of betting mobile apps. When bonuses and
+            promotions are only available via the mobile app, players who utilize the 1win website are not eligible for
+            them.</p>
+        </div>
+        <!-- Image Content -->
+        <div class="w-full md:w-5/12">
+          <img decoding="async" width="100%" height="auto"
+            src="https://1win1.in/wp-content/uploads/2024/05/Mobile-app-for-Android-and-iOS-Devices.webp"
+            alt="With the 1win app for iOS and Android, you can easily bet in India on your favorite sports events"
+            class="rounded-lg shadow-lg" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Confidentiality of User Data Section -->
+    <section class="my-8">
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- Text Content -->
+        <div class="w-full md:w-7/12 mb-6 md:mb-0">
+          <h3 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Confidentiality of User Data
+          </h3>
+          <p class="mb-4">Prioritizing security and safety, the betting employs cutting-edge safeguards to keep users
+            secure. User data is protected through the site’s use of advanced data encryption standards.</p>
+          <p>Furthermore, 1win uses strong security measures to protect players’ personal information and money in
+            addition to taking a proactive approach against fraud, money laundering, and other unlawful actions.</p>
+          <p>By carefully maintaining these security protocols, 1win establishes a reliable atmosphere in which gamers
+            may take pleasure in their gaming experience with confidence, understanding that their data and transactions
+            are securely safeguarded.</p>
+        </div>
+        <!-- Image Content -->
+        <div class="w-full md:w-5/12">
+          <img decoding="async" width="100%" height="auto"
+            src="https://1win1.in/wp-content/uploads/2024/05/Confidentiality-of-User-Data.webp"
+            alt="1win applies strict security measures to protect players' personal information and money"
+            class="rounded-lg shadow-lg" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Positive Feedback Section -->
+    <section class="my-8">
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- Text Content -->
+        <div class="w-full md:w-7/12 mb-6 md:mb-0">
+          <h3 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Positive Feedback</h3>
+          <p class="mb-4">There are many positive reviews about the 1win bookmaker. Users share their excellent gambling
+            experience and emphasize such aspects as the uniqueness and variety of games, a rich database of world-known
+            providers, amicable support, instant transactions, high RTP, and many more. However, there are a few
+            negative reviews related to non-compliance and inattentive users.</p>
+        </div>
+        <!-- Image Content -->
+        <div class="w-full md:w-5/12">
+          <img decoding="async" width="100%" height="auto"
+            src="https://1win1.in/wp-content/uploads/2024/05/Positive-Feedback.webp"
+            alt="There are many positive reviews about the bookmaker 1win" class="rounded-lg shadow-lg" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Loyalty Program Section -->
+    <section class="my-8">
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- Text Content -->
+        <div class="w-full md:w-7/12 mb-6 md:mb-0">
+          <h3 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Loyalty Program</h3>
+          <p>In addition, users of 1win casino in India can take advantage of a loyalty programme that will credit their
+            accounts with points earned from casino games. Points may be swapped for actual money after a player reaches
+            a particular threshold. Points will be earned in the end based on the amount you wager in the games.</p>
+        </div>
+        <!-- Image Content -->
+        <div class="w-full md:w-5/12">
+          <img decoding="async" width="100%" height="auto"
+            src="https://1win1.in/wp-content/uploads/2024/05/Loyalty-Program.webp"
+            alt="Users of 1win casino in India can take advantage of the loyalty program" class="rounded-lg shadow-lg"
+            loading="lazy">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Guide for Deactivating Your Account Section -->
+    <section class="my-8">
+      <div class="flex flex-col md:flex-row items-center -mx-2">
+        <!-- Text Content -->
+        <div class="w-full md:w-7/12 mb-6 px-2 md:mb-0">
+          <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Guide for Deactivating Your
+            Account</h2>
+          <p class="mb-6">Thanks to responsible gambling, players who don’t intend to continue playing at 1win online
+            can deactivate accounts by following certain procedures.</p>
+
+          <ol>
+            <li class="list-decimal list-inside mt-2"><strong class="font-bold">Sign in</strong>. Go to the 1win website
+              and enter your username and password to access your account.</li>
+            <li class="list-decimal list-inside mt-2"><strong class="font-bold">Get to the Account Settings</strong>.
+              Navigate to your betting account settings after logging in. Usually, you can find this by clicking on your
+              username or profile symbol, which will take you to the settings or profile menu.</li>
+            <li class="list-decimal list-inside mt-2"><strong class="font-bold">Locate the Deactivation Option</strong>.
+              See whether you have the option to terminate or deactivate your 1Win account. This might be referred to as
+              ‘Account Settings’ or contact the support team with this claim.</li>
+            <li class="list-decimal list-inside mt-2"><strong class="font-bold">Observe the Directions</strong>. Select
+              the deactivation option and adhere to the given guidelines. You might be prompted to confirm your choice
+              by entering your password or giving other details.</li>
+            <li class="list-decimal list-inside mt-2"><strong class="font-bold">Reason for deactivation</strong>. You
+              could occasionally be prompted to give a justification for account deactivation. Choose the relevant
+              explanation from the list of possibilities or supply more information upon request.</li>
+            <li class="list-decimal list-inside mt-2"><strong class="font-bold">Confirm Deactivation</strong>. Verify
+              that you want to deactivate your account after giving the required details. This might entail following
+              instructions to complete additional steps or hitting a confirmation button.</li>
+            <li class="list-decimal list-inside mt-2"><strong class="font-bold">Completion</strong>. Your request to
+              deactivate your betting account will be handled after verification. The successful deactivation of your
+              account may be confirmed to you by email or a message.</li>
+          </ol>
+        </div>
+        <!-- Image Content -->
+        <div class="w-full md:w-5/12 px-2">
+          <img decoding="async"
+            src="https://1win1.in/wp-content/uploads/2024/05/Guide-for-Deactivating-Your-Account.webp"
+            alt="Step-by-step instructions on how to deactivate your 1win casino account"
+            class="w-full rounded-lg shadow-lg" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Guide for Deactivating Your Account Section -->
+    <section class="my-8">
+      <div class="flex flex-col md:flex-row items-center -mx-2">
+        <!-- Text Content -->
+        <div class="w-full md:w-7/12 mb-6 px-2 md:mb-0">
+          <h2 class="text-3xl font-bold mb-4 font-sf-display-black-italic leading-tight">Having Problems on the 1win
+            Website?</h2>
+          <p class="mb-6">Through the betting website’s 1win support service, you can easily report any technical
+            difficulties and get answers to any of your questions. The support team may be contacted in the following
+            ways:</p>
+
+          <ol>
+            <li class="list-decimal list-inside mt-2">Online chat service. It is accessible around the clock. You should
+              receive a response in around five minutes on average. Be aware that the chat manager can ask for your
+              email address or player ID;</li>
+            <li class="list-decimal list-inside mt-2">Email. To address significant problems and contentious
+              circumstances where supporting screenshots might be required, send an email to support@1win.xyz. Remember
+              that email responses might take longer to get in, usually anything from a few hours to a full workday;
+            </li>
+            <li class="list-decimal list-inside mt-2">Make call. There are two phone numbers +91 79016 56951, and +91
+              79016 56971 to contact support managers that are available 24/7.</li>
+
+          </ol>
+        </div>
+        <!-- Image Content -->
+        <div class="w-full md:w-5/12 px-2">
+          <img decoding="async"
+            src="https://1win1.in/wp-content/uploads/2024/05/Having-Problems-on-the-1win-Website.webp" alt=""
+            class="w-full rounded-lg shadow-lg" />
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <!-- FAQ Section -->
+  <div class="max-w-6xl mx-auto">
+    <div class="flex justify-center">
+      <div class="px-4">
+        <h3 class="text-3xl bg-blue-50 font-sf-display-black-italic text-4xl rounded-lg mb-0 p-8">FAQ</h3>
+        <div class="grid md:grid-cols-1" x-data="{selected: null}">
+          <div class="max-w-full mx-auto">
+            <ul class="shadow-box">
+              <!-- Accordion Item 1 -->
+              <li class="relative bg-blue-50 border-b border-gray-200 my-3 rounded-lg">
+                <button type="button" class="w-full px-6 py-6 text-left"
+                  @click="selected !== 1 ? selected = 1 : selected = null">
+                  <div class="flex items-center justify-between text-xl font-bold">
+                    <span>How much time does 1win betting take to process payments?</span>
+                    <span :class="{'transform rotate-180 bg-green-600': selected == 1}"
+                      class="bg-black text-white rounde-lg p-1 rounded-lg">
+                      <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7"></path>
+                      </svg>
+                    </span>
+                  </div>
+                </button>
+                <div class="relative bg-blue-50 overflow-hidden transition-all max-h-0 duration-700" x-ref="container1"
+                  x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                  <div class="px-6 pb-6">
+                    <p>Depending on the approach used, the processing time may change. Credit card and electronic wallet
+                      payments are frequently processed instantaneously. Bank transfers might take longer, often ranging
+                      from a few hours to several working days, depending on the intermediaries involved and any extra
+                      procedures.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Accordion Item 2 -->
+              <li class="relative bg-blue-50 border-b border-gray-200 my-3 rounded-lg">
+                <button type="button" class="w-full px-6 py-6 text-left"
+                  @click="selected !== 2 ? selected = 2 : selected = null">
+                  <div class="flex items-center justify-between text-xl font-bold">
+                    <span>Can I place limitations on my bets at 1win?</span>
+                    <span :class="{'transform rotate-180 bg-green-600': selected == 2}"
+                      class="bg-black text-white rounde-lg p-1 rounded-lg">
+                      <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7"></path>
+                      </svg>
+                    </span>
+                  </div>
+                </button>
+                <div class="relative bg-blue-50 overflow-hidden transition-all max-h-0 duration-700" x-ref="container2"
+                  x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+                  <div class="px-6 pb-6">
+                    <p>Gamblers can choose to control their money and establish betting restrictions. This feature
+                      encourages prudent money management and gaming.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Accordion Item 3 -->
+              <li class="relative bg-blue-50 border-b border-gray-200 my-3 rounded-lg">
+                <button type="button" class="w-full px-6 py-6 text-left"
+                  @click="selected !== 3 ? selected = 3 : selected = null">
+                  <div class="flex items-center justify-between text-xl font-bold">
+                    <span>What should I do if I forgot my 1win account password?</span>
+                    <span :class="{'transform rotate-180 bg-green-600': selected == 3}"
+                      class="bg-black text-white rounde-lg p-1 rounded-lg">
+                      <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7"></path>
+                      </svg>
+                    </span>
+                  </div>
+                </button>
+                <div class="relative bg-blue-50 overflow-hidden transition-all max-h-0 duration-700" x-ref="container3"
+                  x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                  <div class="px-6 pb-6">
+                    <p>If you've forgotten your password, you can use the 'Forgot Password' option on the login page to
+                      reset it. You'll receive instructions via email to create a new password and regain access to your
+                      account.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Accordion Item 4 -->
+              <li class="relative bg-blue-50 border-b border-gray-200 my-3 rounded-lg">
+                <button type="button" class="w-full px-6 py-6 text-left"
+                  @click="selected !== 4 ? selected = 4 : selected = null">
+                  <div class="flex items-center justify-between text-xl font-bold">
+                    <span>How can I contact 1win customer support?</span>
+                    <span :class="{'transform rotate-180 bg-green-600': selected == 4}"
+                      class="bg-black text-white rounde-lg p-1 rounded-lg">
+                      <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7"></path>
+                      </svg>
+                    </span>
+                  </div>
+                </button>
+                <div class="relative bg-blue-50 overflow-hidden transition-all max-h-0 duration-700" x-ref="container4"
+                  x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
+                  <div class="px-6 pb-6">
+                    <p>You can contact 1win customer support through their live chat feature available on the website,
+                      by sending an email to their support address, or by calling their customer service hotline. Check
+                      the 'Contact Us' section on their website for more details.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Accordion Item 5 -->
+              <li class="relative bg-blue-50 border-b border-gray-200 my-3 rounded-lg">
+                <button type="button" class="w-full px-6 py-6 text-left"
+                  @click="selected !== 5 ? selected = 5 : selected = null">
+                  <div class="flex items-center justify-between text-xl font-bold">
+                    <span>Are there any fees for withdrawing funds from 1win?</span>
+                    <span :class="{'transform rotate-180 bg-green-600': selected == 5}"
+                      class="bg-black text-white rounde-lg p-1 rounded-lg">
+                      <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 9l-7 7-7-7"></path>
+                      </svg>
+                    </span>
+                  </div>
+                </button>
+                <div class="relative bg-blue-50 overflow-hidden transition-all max-h-0 duration-700" x-ref="container5"
+                  x-bind:style="selected == 5 ? 'max-height: ' + $refs.container5.scrollHeight + 'px' : ''">
+                  <div class="px-6 pb-6">
+                    <p>Fees for withdrawing funds may vary depending on the payment method used and your account status.
+                      Check the withdrawal section on the 1win website or contact customer support for detailed
+                      information about any applicable fees.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p
+          class="text-white bg-gradient-to-r from-transparent via-blue-400 via-blue-600 via-blue-400 p-3 font-bold to-transparent text-center">
+          Last Updated 16 Aug 2024</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="contact_us max-w-7xl mx-auto my-8 p-2 md:p-5">
+    <h3 class="text-3xl font-sf-display-black-italic text-4xl">Add a Comment</h3>
+    <div class="flex items-start">
+      <div class="md:w-[300px] w-full p-2 space-y-3">
+        <input type="text" name="name" id="name"
+          class="placeholder:text-black bg-blue-50 text-dark w-full p-3 rounded-md" placeholder="Name" />
+        <input type="email" name="email" id="email"
+          class="placeholder:text-black bg-blue-50 text-dark w-full p-3 rounded-md" placeholder="Email" />
+        <textarea name="text" id="text" class="md:hidden flex bg-blue-50 w-full h-full p-4 placeholder:text-black"
+          placeholder="Your Text" rows="6"></textarea>
+        <button type="button"
+          class="bg-blue-500 flex items-center justify-center w-full rounded-lg text-white p-3 font-bold">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-3 size-6">
+            <path fill-rule="evenodd"
+              d="M7.502 6h7.128A3.375 3.375 0 0 1 18 9.375v9.375a3 3 0 0 0 3-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 0 0-.673-.05A3 3 0 0 0 15 1.5h-1.5a3 3 0 0 0-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6ZM13.5 3A1.5 1.5 0 0 0 12 4.5h4.5A1.5 1.5 0 0 0 15 3h-1.5Z"
+              clip-rule="evenodd" />
+            <path fill-rule="evenodd"
+              d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V9.375ZM6 12a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V12Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 15a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V15Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 18a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V18Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd" />
+          </svg>
+          <span>Submit</span></button>
+
+      </div>
+      <div class="p-2 flex-1 md:flex hidden h-full">
+        <textarea name="text" id="text" class="bg-blue-50 w-full h-full p-4 placeholder:text-black"
+          placeholder="Your Text" rows="6"></textarea>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mx-auto p-6">
+    <div class="space-y-6">
+      <!-- Comment 1 -->
+      <article style="background: #f1f5ff;" class="rounded-lg p-4">
+        <span class="text-xl font-semibold text-gray-800 italic font-sf-display-black-italic">Darshit Mondal</span>
+        <span class="text-sm text-blue-500 ml-4">
+          <time class="text-base" datetime="2024-05-20 18:08:08">2024-05-20 18:08:08</time>
+        </span>
+        <p class="mt-2 text-gray-700">I was personally attracted to this platform because it has not only casino games
+          but also a bookmaker. There are also promotions with good bonuses for each section.</p>
+      </article>
+
+      <!-- Comment 2 -->
+      <article style="background: #f1f5ff;" class="rounded-lg p-4">
+        <span class="text-xl font-semibold text-gray-800 italic font-sf-display-black-italic">Mohammed ariyan</span>
+        <span class="text-sm text-blue-500 ml-4">
+          <time class="text-base" datetime="2024-05-18 20:56:57">2024-05-18 20:56:57</time>
+        </span>
+        <p class="mt-2 text-gray-700">Good App.. I Love it’s 🫰🌸🙈 I'm From Bangladesh</p>
+      </article>
+
+      <!-- Comment 3 -->
+      <article style="background: #f1f5ff;" class="rounded-lg p-4">
+        <span class="text-xl font-semibold text-gray-800 italic font-sf-display-black-italic">Teresiah wairimu</span>
+        <span class="text-sm text-blue-500 ml-4">
+          <time class="text-base" datetime="2024-03-19 21:20:43">2024-03-19 21:20:43</time>
+        </span>
+        <p class="mt-2 text-gray-700">Nice games</p>
+      </article>
+
+      <!-- Comment 4 -->
+      <article style="background: #f1f5ff;" class="rounded-lg p-4">
+        <span class="text-xl font-semibold text-gray-800 italic font-sf-display-black-italic">Abenyan</span>
+        <span class="text-sm text-blue-500 ml-4">
+          <time class="text-base" datetime="2024-02-20 21:33:16">2024-02-20 21:33:16</time>
+        </span>
+        <p class="mt-2 text-gray-700">1win has improved on the standard level of living</p>
+      </article>
+
+      <!-- Comment 5 -->
+      <article style="background: #f1f5ff;" class="rounded-lg p-4">
+        <span class="text-xl font-semibold text-gray-800 italic font-sf-display-black-italic">Kumar Heidi</span>
+        <span class="text-sm text-blue-500 ml-4">
+          <time class="text-base" datetime="2024-01-12 15:23:26">2024-01-12 15:23:26</time>
+        </span>
+        <p class="mt-2 text-gray-700">Good site, good bonus. Can play and win here. Instant withdrawals.</p>
+      </article>
+
+      <!-- Comment 6 -->
+      <article style="background: #f1f5ff;" class="rounded-lg p-4">
+        <span class="text-xl font-semibold text-gray-800 italic font-sf-display-black-italic">Sameer Ildar</span>
+        <span class="text-sm text-blue-500 ml-4">
+          <time class="text-base" datetime="2022-12-15 13:25:08">2022-12-15 13:25:08</time>
+        </span>
+        <p class="mt-2 text-gray-700">Play on the site 1win convenient, live casino done very well, the bonus is high!
+          But, I made a deposit a second time for 10,000 INR and I was not given a bonus in the casino, why?</p>
+      </article>
+
+      <!-- Comment 7 -->
+      <article style="background: #f1f5ff;" class="rounded-lg p-4">
+        <span class="text-xl font-semibold text-gray-800 italic font-sf-display-black-italic">Kamal Pandey</span>
+        <span class="text-sm text-blue-500 ml-4">
+          <time class="text-base" datetime="2022-08-08 16:22:01">2022-08-08 16:22:01</time>
+        </span>
+        <p class="mt-2 text-gray-700">The most important thing for me is a fast payout, and to my great surprise, 1win
+          is paying out my winnings, and fast enough. In all the time I’ve played, I’ve never had to contact the
+          support
+          team, everything is so automated that I have no idea who it was made for in the first place. Quick payouts,
+          quick verification, easy deposits. Everything is cool! Looking forward to more people from India so we can
+          chat with our guys while playing with a live dealer</p>
+      </article>
+
+      <!-- Comment 8 -->
+      <article style="background: #f1f5ff;" class="rounded-lg p-4">
+        <span class="text-xl font-semibold text-gray-800 italic font-sf-display-black-italic">Pradesh Singh</span>
+        <span class="text-sm text-blue-500 ml-4">
+          <time class="text-base" datetime="2022-08-08 16:21:44">2022-08-08 16:21:44</time>
+        </span>
+        <p class="mt-2 text-gray-700">I’ve been playing on the 1Win for about half a year now. I think they have a
+          very
+          cool design. I’ve played on many sites, but I’ve settled on 1win because they know exactly what they’re
+          doing.
+          What’s more, I really like the support service. With many bookmakers you have to wait all the time and go
+          through a lot of bureaucracy while 1win is all about people.</p>
+      </article>
+
+      <!-- Comment 9 -->
+      <article style="background: #f1f5ff;" class="rounded-lg p-4">
+        <span class="text-xl font-semibold text-gray-800 italic font-sf-display-black-italic">RAMIL</span>
+        <span class="text-sm text-blue-500 ml-4">
+          <time class="text-base" datetime="2022-07-27 15:25:20">2022-07-27 15:25:20</time>
+        </span>
+        <p class="mt-2 text-gray-700">I have been betting on 1Win since last year, the top sporting events have good
+          odds, the usual ones not so much. I do not have any problems with payments, delays are very rare, in fact
+          all
+          the money is paid.</p>
+      </article>
+
+      <!-- Comment 10 -->
+      <article style="background: #f1f5ff;" class="rounded-lg p-4">
+        <span class="text-xl font-semibold text-gray-800 italic font-sf-display-black-italic">Alex Magma</span>
+        <span class="text-sm text-blue-500 ml-4">
+          <time class="text-base" datetime="2022-05-25 10:12:37">2022-05-25 10:12:37</time>
+        </span>
+        <p class="mt-2 text-gray-700">1win has not let me down yet, the site is working stably, money is withdrawn in
+          the minimum time. It is convenient to bet on sports, the calculation of winnings is always correct. I would
+          like to diversify the list of bets, but in general you can play.</p>
+      </article>
+
+      <!-- Comment 11 -->
+      <article style="background: #f1f5ff;" class="rounded-lg p-4">
+        <span class="text-xl font-semibold text-gray-800 italic font-sf-display-black-italic">rajah kimaru</span>
+        <span class="text-sm text-blue-500 ml-4">
+          <time class="text-base" datetime="2021-12-13 12:56:25">2021-12-13 12:56:25</time>
+        </span>
+        <p class="mt-2 text-gray-700">1win is a very good place to bet on sports! Thanks for the bonus and for the
+          interesting types of casino games.</p>
+      </article>
+    </div>
+  </div>
+
+
+
+  <footer class="bg-gray-900 text-gray-300 py-6 px-4 flex flex-col">
+    <a href="/">
+      <img src="https://1win1.in/wp-content/uploads/2022/07/header-logo.webp" class="w-[110px]" alt="1Win India" />
+    </a>
+    <ul
+      class="flex items-center justify-center mb-0 space-x-5 flex-wrap border-y border-black py-3 border-x-0 border-2">
+      <li><a href="/">General Information</a></li>
+      <li><a href="/">Loyality Program</a></li>
+      <li><a href="/">Anti Fraud</a></li>
+      <li><a href="/">License</a></li>
+      <li><a href="/">About Us</a></li>
+      <li><a href="/">Contact Us</a></li>
+      <li><a href="/">Terms</a></li>
+      <li><a href="/">Privacy Policy </a></li>
+      <li><a href="/">Responsible Gaming</a></li>
+    </ul>
+
+    <ul class="flex flex-wrap items-center justify-center p-0 m-0 list-none">
+      <li class="mx-4 mt-4">
+        <img src="./images/1.webp" alt="Brand 1" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/2.webp" alt="Brand 2" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/3.webp" alt="Brand 3" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/4.webp" alt="Brand 4" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/5.webp" alt="Brand 5" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/6.webp" alt="Brand 6" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/7.webp" alt="Brand 7" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/8.webp" alt="Brand 8" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/9.webp" alt="Brand 9" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/10.webp" alt="Brand 10" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/12.webp" alt="Brand 11" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/13.webp" alt="Brand 12" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/14.webp" alt="Brand 13" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/15.webp" alt="Brand 14" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/16.webp" alt="Brand 15" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/17.webp" alt="Brand 16" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/18.webp" alt="Brand 17" class="w-auto h-4">
+      </li>
+      <li class="mx-4 mt-4">
+        <img src="./images/19.webp" alt="Brand 18" class="w-auto h-4">
+      </li>
+    </ul>
+
+    <div class="flex justify-center items-center max-lg:flex-col text-center flex-wrap gap-4">
+      <img src="./images/gambling-therapy-2.webp" class="w-32 my-8">
+      <img src="./images/be-gamble-aware-2.webp"class="w-32 my-8">
+      <div class="w-full">
+        <img src="./images/dmca3.webp" alt="Brand 17" class="w-20 mx-auto">
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.3/cdn.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+    integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#12192c",
+            secondry: "#273251",
+            sky: "#3dacff"
+          },
+          fontFamily: {
+            'sf-display-regular': ['sf-display-regular', 'sans-serif'],
+            'sf-display-medium': ['sf-display-medium', 'sans-serif'],
+            'sf-display-bold': ['sf-display-bold', 'sans-serif'],
+            'sf-display-heavy-italic': ['sf-display-heavy-italic', 'sans-serif'],
+            'sf-display-black-italic': ['sf-display-black-italic', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
